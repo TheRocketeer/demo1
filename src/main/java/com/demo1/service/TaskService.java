@@ -40,12 +40,13 @@ public class TaskService {
 			}
 			
 			listaPalabras.retainAll(listaArchivo);
-			FileWriter writer = new FileWriter(nombreArchivoSalida + Constantes.EXT_TEXT);
-			for(String palabra : listaPalabras) {
-				writer.write(palabra + System.lineSeparator());
+			if(!listaPalabras.isEmpty()) {
+				FileWriter writer = new FileWriter(nombreArchivoSalida + Constantes.EXT_TEXT);
+				for(String palabra : listaPalabras) {
+					writer.write(palabra + System.lineSeparator());
+				}
+				writer.close();
 			}
-			writer.close();
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
