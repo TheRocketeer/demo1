@@ -1,0 +1,5 @@
+com/demo1/utils/Constantes.class
+com/demo1/application/Application.class
+com/demo1/service/TaskService.class
+com/demo1/application/SwaggerConfig.class
+com/demo1/controller/TaskController.class
